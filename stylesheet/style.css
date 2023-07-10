@@ -1,0 +1,90 @@
+
+body {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+* {
+    font-size: 30px;
+}
+
+#result {grid-area: result;}
+.btnSum {grid-area: Sum;}
+.btnMinus {grid-area: Minus;}
+.btnTime {grid-area: Time;}
+.btnDev {grid-area: Dev;}
+.btnC {grid-area: C;}
+.btnPC {grid-area: pc;}
+.btn0 {grid-area: n0;}
+.btn1 {grid-area: n1;}
+.btn2 {grid-area: n2;}
+.btn3 {grid-area: n3;}
+.btn4 {grid-area: n4;}
+.btn5 {grid-area: n5;}
+.btn6 {grid-area: n6;}
+.btn7 {grid-area: n7;}
+.btn8 {grid-area: n8;}
+.btn9 {grid-area: n9;}
+.btnDot {grid-area: bdot;}
+.btnEql {grid-area: Eql;}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    border-radius: 1rem;
+    padding: 1rem;
+    background: rgba(0,0,0,.5);
+}
+
+#result {
+    background: #fff;
+    border-radius: .4rem;
+    box-shadow: 0 4px 4px #333;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: right
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    'result result result result'
+    'C C pc Dev'
+    'n7 n8 n9 Time'
+    'n4 n5 n6 Minus'
+    'n1 n2 n3 Sum'
+    'n0 bdot Eql Eql';
+    gap: 10px;
+}
+
+.grid > button {
+    cursor: pointer;
+    border-radius: .4rem;
+    box-shadow: 0 4px 4px #333;
+}
+
+.grid > button:hover {
+    background-color: #d3d3d3;
+    box-shadow: none;
+}
+
+.pt {
+    padding: 1rem;
+    text-align: center;
+}
+
+#run {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: .4rem;
+    box-shadow: 0 4px 4px #333;
+}
+
+#run:hover {
+    background-color: #d3d3d3;
+    box-shadow: none;
+}
